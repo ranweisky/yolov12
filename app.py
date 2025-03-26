@@ -63,13 +63,9 @@ def app():
                 model_id = gr.Dropdown(
                     label="Model",
                     choices=[
-                        "yolov12n.pt",
-                        "yolov12s.pt",
-                        "yolov12m.pt",
-                        "yolov12l.pt",
-                        "yolov12x.pt",
+                        "/root/autodl-tmp/yolov12/runs/detect/train92.0/weights/best.pt",
                     ],
-                    value="yolov12m.pt",
+                    value="/root/autodl-tmp/yolov12/runs/detect/train92.0/weights/best.pt",
                 )
                 image_size = gr.Slider(
                     label="Image Size",
